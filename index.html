@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مهند أحمد بن لامة - السيرة الذاتية</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#fbbf24',
+                        dark: '#0f172a',
+                        darker: '#020617',
+                        card: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #2563eb; }
+
+        .gradient-text {
+            background: linear-gradient(to left, #3b82f6, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary selection:text-white">
+
+    <nav class="fixed w-full z-50 glass-card transition-all duration-300 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl md:text-2xl font-bold gradient-text">مهند بن لامة</a>
+            <div class="hidden md:flex space-x-6 space-x-reverse">
+                <a href="#home" class="hover:text-primary transition-colors">الرئيسية</a>
+                <a href="#about" class="hover:text-primary transition-colors">عني</a>
+                <a href="#resume" class="hover:text-primary transition-colors">الخبرات</a>
+                <a href="#skills" class="hover:text-primary transition-colors">المهارات</a>
+                <a href="#portfolio" class="hover:text-primary transition-colors">التقارير</a>
+            </div>
+            <div class="md:hidden text-2xl text-gray-300">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 pb-12 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/10 to-darker z-0"></div>
+        <div class="container mx-auto px-6 z-10">
+            <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+                <div class="w-full md:w-1/2 text-center md:text-right" data-aos="fade-left">
+                    <h2 class="text-xl text-primary font-semibold mb-2">مرحباً بكم، أنا</h2>
+                    <h1 class="text-4xl md:text-7xl font-bold mb-4">مهند <span class="gradient-text">بن لامة</span></h1>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-6 font-light">مذيع <span class="text-secondary">•</span> صحفي <span class="text-secondary">•</span> مراسل</p>
+                    <p class="text-gray-400 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0">
+                        أسعى دائماً لنقل الحقيقة وتسليط الضوء على القضايا الإنسانية والاجتماعية بموضوعية واحترافية عالية، مع خبرة ممتدة في إعداد وتقديم البرامج والإخراج الإذاعي والتلفزيوني.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                        <a href="#portfolio" class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(59,130,246,0.5)]">
+                            شاهد أعمالي <i class="fas fa-play-circle mr-2"></i>
+                        </a>
+                        <a href="#about" class="border border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-bold transition-all">
+                            المزيد عني
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center mt-10 md:mt-0" data-aos="fade-right">
+                    <div class="relative w-64 h-64 md:w-96 md:h-96">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full animate-pulse blur-xl opacity-50"></div>
+                        <img src="photo.jpeg" alt="مهند بن لامة" class="relative w-full h-full object-cover rounded-full border-4 border-primary shadow-2xl z-10" onerror="this.src='https://via.placeholder.com/400x400?text=صورة+شخصية'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">المعلومات <span class="text-primary">الشخصية</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-xl flex items-center gap-4 hover:-translate-y-2 transition-transform" data-aos="fade-up">
+                    <div class="w-12 h-12 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center text-primary text-xl">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-gray-400 text-sm">الإقامة</h3>
+                        <p class="font-semibold text-lg">بني وليد / طرابلس</p>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-xl flex items-center gap-4 hover:-translate-y-2 transition-transform" data-aos="fade-up">
+                    <div class="w-12 h-12 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center text-primary text-xl">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-gray-400 text-sm">الهاتف</h3>
+                        <p class="font-semibold text-lg" dir="ltr">+218924370876</p>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-xl flex items-center gap-4 hover:-translate-y-2 transition-transform overflow-hidden" data-aos="fade-up">
+                    <div class="w-12 h-12 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center text-primary text-xl">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="overflow-hidden">
+                        <h3 class="text-gray-400 text-sm">البريد الإلكتروني</h3>
+                        <p class="font-semibold text-sm md:text-base break-words">mohand1997lama@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="py-20 bg-darker">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">السيرة <span class="text-primary">المهنية والعلمية</span></h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center text-secondary">
+                        <i class="fas fa-briefcase ml-3"></i> الخبرات المهنية
+                    </h3>
+                    <div class="border-r-2 border-primary pr-6 space-y-8 relative">
+                        <div class="relative">
+                            <span class="absolute -right-[33px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-darker"></span>
+                            <h4 class="text-xl font-bold text-white">مذيع ومراسل ومعد برامج</h4>
+                            <p class="text-primary mt-1">جهات إعلامية متعددة</p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="bg-card px-3 py-1 rounded text-sm text-gray-300 border border-gray-700">راديو بني وليد</span>
+                                <span class="bg-card px-3 py-1 rounded text-sm text-gray-300 border border-gray-700">راديو الزيتونة</span>
+                                <span class="bg-card px-3 py-1 rounded text-sm text-gray-300 border border-gray-700">راديو أندلس</span>
+                                <span class="bg-card px-3 py-1 rounded text-sm text-gray-300 border border-gray-700">قناة ليبيا الاحرار</span>
+                                <span class="bg-card px-3 py-1 rounded text-sm text-gray-300 border border-gray-700">راديو ليبيا</span>
+                                <span class="bg-card px-3 py-1 rounded text-sm text-gray-300 border border-gray-700">قناة ليبيا الجديدة</span>
+                                <span class="bg-card px-3 py-1 rounded text-sm text-gray-300 border border-gray-700">وكالة الغيمة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center text-secondary">
+                        <i class="fas fa-graduation-cap ml-3"></i> المؤهلات والدورات
+                    </h3>
+                    <div class="border-r-2 border-primary pr-6 space-y-8 relative">
+                        <div class="relative">
+                            <span class="absolute -right-[33px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-darker"></span>
+                            <h4 class="text-xl font-bold text-white">ليسانس إعلام</h4>
+                            <p class="text-primary mt-1">جامعة بني وليد</p>
+                            <p class="text-gray-400 mt-2">التقدير: جيد</p>
+                        </div>
+                        <div class="relative">
+                            <span class="absolute -right-[33px] top-1 w-4 h-4 rounded-full bg-secondary border-4 border-darker"></span>
+                            <h4 class="text-xl font-bold text-white">الدورات والشهادات</h4>
+                            <ul class="text-gray-400 mt-3 space-y-2 list-disc list-inside">
+                                <li>دورة إعداد وتقديم البرامج (أندلس الإعلامية)</li>
+                                <li>دورة إخراج البرامج (أندلس الإعلامية)</li>
+                                <li>دورة تدريبية في الإعلام (أكاديمية RTN - تونس)</li>
+                                <li>عدة دورات في مجال التنمية البشرية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">المهارات <span class="text-primary">والقدرات</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-6 md:p-8 rounded-2xl" data-aos="zoom-in">
+                    <h3 class="text-xl font-bold mb-6 text-center border-b border-gray-700 pb-4"><i class="fas fa-camera-retro text-primary ml-2"></i> مهارات مهنية</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1 text-sm md:text-base">
+                                <span>تصوير ومونتاج ومكساج</span>
+                                <span class="text-primary">جيد جداً</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 md:p-8 rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
+                    <h3 class="text-xl font-bold mb-6 text-center border-b border-gray-700 pb-4"><i class="fas fa-language text-secondary ml-2"></i> اللغــــات</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1 text-sm md:text-base">
+                                <span>العربية</span>
+                                <span class="text-secondary">ممتاز</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1 text-sm md:text-base">
+                                <span>الإنجليزية</span>
+                                <span class="text-secondary">متوسط</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 md:p-8 rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-6 text-center border-b border-gray-700 pb-4"><i class="fas fa-laptop text-primary ml-2"></i> خبرات تقنية</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1 text-sm md:text-base">
+                                <span>Word / Excel / Internet</span>
+                                <span class="text-primary">ممتاز - جيد</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-20 bg-darker">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4" data-aos="fade-up">التقارير <span class="text-primary">والأعمال الإعلامية</span></h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto text-sm md:text-base" data-aos="fade-up" data-aos-delay="100">
+                مجموعة من أبرز التقارير والتغطيات الميدانية. اضغط على التقرير لمشاهدته مباشرة على المنصة الأصلية.
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                
+                <div class="glass-card rounded-2xl overflow-hidden hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all flex flex-col" data-aos="fade-up">
+                    <a href="https://youtu.be/e007jEARzZU" target="_blank" class="relative group block w-full aspect-video bg-black overflow-hidden">
+                        <img src="https://img.youtube.com/vi/e007jEARzZU/hqdefault.jpg" alt="تقرير الطوارق" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fab fa-youtube text-6xl text-red-600 drop-shadow-lg group-hover:scale-110 transition-transform"></i>
+                        </div>
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold bg-red-600 text-white px-2 py-1 rounded mb-3 inline-block">تقرير إنساني</span>
+                            <h3 class="text-lg md:text-xl font-bold mb-2">5 عائلات من "الطوارق" يعيشون في منزل واحد</h3>
+                            <p class="text-gray-400 text-sm">أزمة السكن والخصوصية التى تواجهها خمس عائلات بمنطقة المردوم بمدينة بنى وليد.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://youtu.be/GgOFQnPYfd0" target="_blank" class="relative group block w-full aspect-video bg-black overflow-hidden">
+                        <img src="https://img.youtube.com/vi/GgOFQnPYfd0/hqdefault.jpg" alt="نازحو تاورغاء" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fab fa-youtube text-6xl text-red-600 drop-shadow-lg group-hover:scale-110 transition-transform"></i>
+                        </div>
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold bg-primary text-white px-2 py-1 rounded mb-3 inline-block">تغطية ميدانية</span>
+                            <h3 class="text-lg md:text-xl font-bold mb-2">نازحو تاورغاء في بني وليد</h3>
+                            <p class="text-gray-400 text-sm">رصد المعاناة اليومية والظروف المعيشية القاسية التي يعيشها أهالي تاورغاء فى المخيمات.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://youtu.be/daPaqkQtHVA" target="_blank" class="relative group block w-full aspect-video bg-black overflow-hidden">
+                        <img src="https://img.youtube.com/vi/daPaqkQtHVA/hqdefault.jpg" alt="جز الأغنام" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fab fa-youtube text-6xl text-red-600 drop-shadow-lg group-hover:scale-110 transition-transform"></i>
+                        </div>
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold bg-secondary text-darker px-2 py-1 rounded mb-3 inline-block">موروث شعبي</span>
+                            <h3 class="text-lg md:text-xl font-bold mb-2">موسم "جز الاغنام" في بني وليد</h3>
+                            <p class="text-gray-400 text-sm">رصد هذا الموسم كطقس اجتماعى وتكافلى يحافظ على الموروث الشعبي والروابط القبلية.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://youtu.be/AOPfZwzrKwY" target="_blank" class="relative group block w-full aspect-video bg-black overflow-hidden">
+                        <img src="https://img.youtube.com/vi/AOPfZwzrKwY/hqdefault.jpg" alt="فنان النحت" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fab fa-youtube text-6xl text-red-600 drop-shadow-lg group-hover:scale-110 transition-transform"></i>
+                        </div>
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold bg-purple-600 text-white px-2 py-1 rounded mb-3 inline-block">قصة إنسانية / فن</span>
+                            <h3 class="text-lg md:text-xl font-bold mb-2">"الشعاب الزنداح" فنان النحت</h3>
+                            <p class="text-gray-400 text-sm">قصة فنان فطري يحول أخشاب البيئة المحلية إلى تحف فنية تعبر عن شغف وعزلة المبدع.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <a href="https://www.facebook.com/share/v/18EjWtMjCT/?mibextid=wwXIfr" target="_blank" class="glass-card p-4 md:p-6 rounded-2xl flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-right gap-4 hover:bg-blue-900/30 border border-blue-800/50 transition-all group" data-aos="zoom-in">
+                    <div class="w-16 h-16 rounded-full bg-blue-600 flex-shrink-0 flex items-center justify-center text-3xl text-white group-hover:scale-110 transition-transform">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs text-blue-400 mb-1 block mt-2 sm:mt-0">شاهد على فيسبوك</span>
+                        <h3 class="text-lg font-bold mb-1 group-hover:text-primary transition-colors">وديان بني وليد والجذور الأمازيغية</h3>
+                        <p class="text-gray-400 text-xs md:text-sm">يتتبع الأصول الأمازيغية لأسماء الوديان، مبرزاً التنوع الثقافي والتاريخي.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.almehad.net/صحة-المواطن-بين-تقصير-العام-وشوّاية/" target="_blank" class="glass-card p-4 md:p-6 rounded-2xl flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-right gap-4 hover:bg-emerald-900/30 border border-emerald-800/50 transition-all group" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="w-16 h-16 rounded-full bg-emerald-600 flex-shrink-0 flex items-center justify-center text-3xl text-white group-hover:scale-110 transition-transform">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs text-emerald-400 mb-1 block mt-2 sm:mt-0">مقال صحفي</span>
+                        <h3 class="text-lg font-bold mb-1 group-hover:text-emerald-400 transition-colors">صحة المواطن بين تقصير العام وشوّاية الخاص</h3>
+                        <p class="text-gray-400 text-xs md:text-sm">مقال تحليلي ونقدي حول الواقع الصحي والتحديات التي تواجه المواطن.</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-dark pt-16 pb-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">هل تبحث عن تغطية إعلامية متميزة؟</h2>
+            <p class="text-gray-400 mb-8 text-sm md:text-base">يسعدني تواصلكم للعمل على مشاريع إعلامية وتقارير صحفية احترافية.</p>
+            
+            <div class="flex justify-center space-x-6 space-x-reverse mb-10">
+                <a href="mailto:mohand1997lama@gmail.com" class="w-12 h-12 rounded-full bg-card flex items-center justify-center text-xl hover:bg-primary hover:text-white transition-all shadow-lg">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+218924370876" class="w-12 h-12 rounded-full bg-card flex items-center justify-center text-xl hover:bg-primary hover:text-white transition-all shadow-lg">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-gray-500 text-xs md:text-sm">
+                <p>&copy; 2026 مهند أحمد بن لامة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animations
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50, // Reduced offset for better mobile triggering
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-dark/95', 'shadow-xl');
+                nav.classList.remove('glass-card');
+            } else {
+                nav.classList.add('glass-card');
+                nav.classList.remove('bg-dark/95', 'shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>
